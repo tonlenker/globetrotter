@@ -15,8 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D607B19909A556E400699BC3 /* Hello-World-SDK-3.xpl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Hello-World-SDK-3.xpl; sourceTree = BUILT_PRODUCTS_DIR; };
-		D67297EA0F9E0FCC00CFD1FA /* Hello-World-SDK-3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hello-World-SDK-3.cpp; sourceTree = "<group>"; };
+		D607B19909A556E400699BC3 /* Hello-World-SDK-3.xpl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "Hello-World-SDK-3.xpl"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67297EA0F9E0FCC00CFD1FA /* Hello-World-SDK-3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Hello-World-SDK-3.cpp"; sourceTree = "<group>"; };
 		D6A7BDA916A1DEA200D1426A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D6A7BDC016A1DEC000D1426A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D6A7BDF016A1DED200D1426A /* XPLM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XPLM.framework; path = SDK/Libraries/Mac/XPLM.framework; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			);
 			dependencies = (
 			);
-			name = Hello-World-SDK-3;
+			name = "Hello-World-SDK-3";
 			productName = StarterPlugin;
 			productReference = D607B19909A556E400699BC3 /* Hello-World-SDK-3.xpl */;
 			productType = "com.apple.product-type.library.dynamic";
@@ -98,6 +98,8 @@
 /* Begin PBXProject section */
 		D607B16109A5563100699BC3 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = D607B16209A5563100699BC3 /* Build configuration list for PBXProject "Hello-World-SDK-3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -134,6 +136,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				EXECUTABLE_EXTENSION = xpl;
@@ -141,7 +144,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"APL=1",
 					"IBM=0",
-					"LIN=0","XPLM200=1","XPLM210=1","XPLM300=1","XPLM301=1",
+					"LIN=0",
+					"XPLM200=1",
+					"XPLM210=1",
+					"XPLM300=1",
+					"XPLM301=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_VERSION = "";
@@ -176,6 +183,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				EXECUTABLE_EXTENSION = xpl;
@@ -183,7 +191,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"APL=1",
 					"IBM=0",
-					"LIN=0","XPLM200=1","XPLM210=1","XPLM300=1","XPLM301=1",
+					"LIN=0",
+					"XPLM200=1",
+					"XPLM210=1",
+					"XPLM300=1",
+					"XPLM301=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_VERSION = "";
@@ -218,6 +230,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -226,6 +239,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
